@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotline Miami</title>
+    <link rel="stylesheet" href="./estilo.css">
+    
+</head>
+<body>
+    <nav class="interface">
+    <header class="cabecalho">
+        <ul class="menu">
+            <li class="logo"><h1><a href="./Index.html"><img src="./_imagens/logo.png" alt="Menu"></a></h1></li>
+            <li>About</li>
+            <li>Media</li>
+            <li>Custom Art Creator</li>
+        </ul>
+        <ul class="buy">
+            <li class="now"><a href="https://store.steampowered.com/app/219150/Hotline_Miami/" target="_blank" text-decoration="none">Buy Now</a></li>
+        </ul>
+    </header>
+
+<figure class="logoB">
+    <img src="./_imagens/logo2.png" alt="Logo principal" class="logo2">
+</figure>
+
+    <header class="menu2">
+        <ul class="buy2">
+            <li class="now2">Buy Now</li>
+        </ul>
+    </header>
+
+    <div class="trailer">
+    <a href="#" class="btn">Watch the Trailer &#9655</a>
+    
+    <div class="video-container">
+        <span class="close">&#10006;</span>
+        <iframe width="720" height="480" src="https://www.youtube.com/embed/mg5s5Dq50Rg" title="Hotline Miami Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        const btn = document.querySelector('.btn');
+        const videoContainer = document.querySelector('.video-container');
+        const close = document.querySelector('.close');
+
+        btn.addEventListener('click',()=>{
+            videoContainer.classList.add('show');
+        })
+        
+        close.addEventListener('click',()=>{
+            videoContainer.classList.remove('show'); 
+        })
+
+    </script>
+    </div>
+
+    
+</nav>
+</body>
+</html>
